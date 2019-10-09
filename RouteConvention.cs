@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc.Routing;
 
 namespace AspNetCore.RequestLocalizationPipeline
 {
-    public class RouteConvention : IApplicationModelConvention
+    internal class RouteConvention : IApplicationModelConvention
     {
         private readonly AttributeRouteModel _centralPrefix;
 

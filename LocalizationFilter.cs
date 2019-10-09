@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Builder;
 
 namespace AspNetCore.RequestLocalizationPipeline
 {
-    public class LocalizationFilter
+    internal class LocalizationFilter
     {
         public void Configure(IApplicationBuilder app, RequestLocalizationOptions options)
         {
