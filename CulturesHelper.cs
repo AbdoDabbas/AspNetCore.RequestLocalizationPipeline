@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Localization;
 using Microsoft.AspNetCore.Localization.Routing;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Microsoft.AspNetCore.Localization.Extend
+namespace AspNetCore.RequestLocalizationPipeline
 {
     public static class CulturesHelper
     {

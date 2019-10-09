@@ -7,7 +7,7 @@ using System.Text.RegularExpressions;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Rewrite;
 
-namespace Microsoft.AspNetCore.Localization.Extend
+namespace AspNetCore.RequestLocalizationPipeline
 {
     public static class CultureSupportRewrites
     {

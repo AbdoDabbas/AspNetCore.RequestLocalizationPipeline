@@ -7,8 +7,10 @@
     <Company />
     <Description>A localization helper to add the ability to pass culture through URL for .NET Core Web API projects</Description>
     <PackageProjectUrl></PackageProjectUrl>
-    <RepositoryUrl>https://github.com/AbdoDabbas/Microsoft.AspNetCore.Localization.Extend</RepositoryUrl>
+    <RepositoryUrl>https://github.com/AbdoDabbas/AspNetCore.RequestLocalizationPipeline</RepositoryUrl>
     <PackageTags>.net, core, web api, localization</PackageTags>
+    <PackageId>AspNetCore.RequestLocalizationPipeline</PackageId>
+    <Product>AspNetCore.RequestLocalizationPipeline</Product>
   </PropertyGroup>
 
   <ItemGroup>

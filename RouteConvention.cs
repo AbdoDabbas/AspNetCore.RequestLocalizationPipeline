@@ -5,7 +5,7 @@ using System.Text;
 using Microsoft.AspNetCore.Mvc.ApplicationModels;
 using Microsoft.AspNetCore.Mvc.Routing;
 
-namespace Microsoft.AspNetCore.Localization.Extend
+namespace AspNetCore.RequestLocalizationPipeline
 {
     public class RouteConvention : IApplicationModelConvention
     {

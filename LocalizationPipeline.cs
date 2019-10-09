@@ -1,15 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Globalization;
-using System.Linq;
-using System.Text;
-using System.Text.RegularExpressions;
-using Microsoft.AspNetCore.Builder;
+﻿using AspNetCore.RequestLocalizationPipeline;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Rewrite;
-using Microsoft.Extensions.DependencyInjection;
 
-namespace Microsoft.AspNetCore.Localization.Extend
+namespace AspNetCore.RequestLocalizationPipeline
 {
     public static class LocalizationPipeline
     {

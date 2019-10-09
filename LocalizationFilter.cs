@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using Microsoft.AspNetCore.Builder;
 
-namespace Microsoft.AspNetCore.Localization.Extend
+namespace AspNetCore.RequestLocalizationPipeline
 {
     public class LocalizationFilter
     {
