@@ -6,6 +6,19 @@ You can use it by adding it as a separate project and reference it in the Web.AP
 Install-Package AspNetCore.RequestLocalizationPipeline
 ```
 
+# What is it for ?  
+This package will help you pass culture through URL like this:  
+```
+https://mydomain/en/api/myControler
+// OR like this:
+https://mydomain/en-US/api/myController
+```  
+The parts before the `myController` will be considered as [route convention|https://docs.microsoft.com/en-us/aspnet/core/fundamentals/routing?view=aspnetcore-3.0],
+you can set the culture route key where ever you want in the convention area, so it'll be applied to all your controllers.
+
+notes: the default provider that comes with AspNetCore doesn't do the work.
+
+
 # How to use it:  
 There're couple of snippets you need to add to your `startup.cs` before you'll be able to use this package.  
 
