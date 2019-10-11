@@ -12,12 +12,18 @@ namespace AspNetCore.RequestLocalizationPipeline
 {
     public static class LocalizationOptions
     {
-        public static List<CultureInfo> SupportedCultures => InitSupportedCultures();
+        public static List<CultureInfo> SupportedCultures { get; set; }
         
         const string ArabicCulture = "ar-SY";
 
         internal static string DefaultCulture = ArabicCulture;
         internal static string CultureRouteKey = "";
+
+        static LocalizationOptions()
+        {
+            SupportedCultures = InitSupportedCultures();
+        }
+
         internal static int GetCultureRouteKeyIndex()
         {
             Regex langRegex = new Regex(@"\{" + LocalizationOptions.CultureRouteKey + @"( *:[\w= ]+)?\}");
