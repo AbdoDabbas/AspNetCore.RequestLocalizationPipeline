@@ -46,7 +46,15 @@ public void ConfigureServices(IServiceCollection services)
 	services.AddLocalizationOptions(langKey);
 }
 ```  
-Note: `AddLocalizationOptions` will add the `RouteDataRequestCultureProvider` in index 0 of the list `RequestCultureProviders`.  
+Notes:  
+* `AddLocalizationOptions` will add the `RouteDataRequestCultureProvider` in index 0 of the list `RequestCultureProviders`.  
+* By default the package adds support for two languages (en, ar), if you need to add more you do this by filling this list
+before calling the method `AddLocalizationOptions` like this:  
+	```
+	LocalizationOptions.SupportedCultures.Add(new CultureInfo("fr-FR"));
+	// and you can add more languages
+	services.AddLocalizationOptions(langKey);
+	```
 
 4. Now we will add the localization pipeline as a global action filter in your project:  
 ```csharp
